@@ -29,5 +29,6 @@ public class DemoApplication implements CommandLineRunner {
 
         courseRepository.save(new Course("Microservices Beta"));
 //        courseRepository.deleteById(10001);
+//        courseRepository.playWithEntityManager();
     }
 }

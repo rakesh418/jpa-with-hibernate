@@ -1,16 +1,16 @@
 package com.lex418.jpa.hibernate.demo.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
+@Table(name = "course")
 public class Course {
 
     @Id
     @GeneratedValue
     private long id;
 
+    @Column
     private String name;
 
     public Course() {}

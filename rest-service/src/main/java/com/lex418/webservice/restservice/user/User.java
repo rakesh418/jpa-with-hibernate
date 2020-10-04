@@ -1,10 +1,15 @@
 package com.lex418.webservice.restservice.user;
 
+import javax.validation.constraints.Past;
+import javax.validation.constraints.Size;
 import java.util.Date;
 
 public class User {
     private int id;
+
+    @Size(min = 2)
     private String name;
+    @Past
     private Date birthDate;
 
     public User() {
